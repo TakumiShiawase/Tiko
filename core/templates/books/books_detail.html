@@ -1,0 +1,8 @@
+{% extends 'default.html' %} 
+{% block title%}postdetail{%endblock title%}
+{% block content %}
+    <h1>Подробная информация</h1>
+    {{ books_detail.books_name }}
+    {{ books_detail.genre }}
+    {{ books_detail.description }}
+{% endblock content %}

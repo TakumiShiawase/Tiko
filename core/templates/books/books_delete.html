@@ -1,0 +1,13 @@
+{% extends 'default.html' %} 
+{% block title%}postdetail{%endblock title%}
+{% block content %}
+    <h1>Вы действительно хотите удалить эту книгу?</h1>
+    {{ books_detail.books_name }}
+    {{ post_detail.genre }}
+    {{ post_detail.description }}
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="submit" value="подтвердить">
+    </form>
+{% endblock content %}
